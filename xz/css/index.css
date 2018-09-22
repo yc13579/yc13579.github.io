@@ -218,10 +218,11 @@ header .search span{
 	margin-right: 17px;
 }
 footer{
-	width: 100%;
+	width: 1200ox;
 	height: 180px;
 	background-color: #4d4d4d;
 	position: relative;
+	margin 0 auto;
 }
 footer ul{
 	width: 1200px;
