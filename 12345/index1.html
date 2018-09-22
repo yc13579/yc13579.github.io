@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon5.ico">
+	<title>王一川的个人网站</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			font-family: "微软雅黑"
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			background-image: url(303.jpg);
+			background-size: cover;
+			z-index: -1
+		}
+		.top{
+			width: 100%;
+			height: 30px;
+			background-color: #666;
+		}
+		header{
+			width: 100%;
+			height: 80px;
+			margin-bottom: 50px;
+		}
+		header .logo{
+			float: left;
+			padding-left: 50px;
+			width: 200px;
+			height: 80px;
+		}
+		header ul{
+			list-style: none;
+			float: right;
+			padding-right: 50px;
+		}
+		header ul li{
+			float: left;
+			width: 150px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+		}
+		header ul li a{
+			font-size: 24px;
+			color: #000;
+		}
+		header ul a:hover{
+			color: orange
+		}
+		main{
+			width: 90%;
+			margin: 0 auto;
+		}
+		main .main-left{
+			width: 30%;
+			float: left;
+			background-color: rgba(255,255,255,.5);
+		}
+		main .main-right{
+			width: 70%;
+			float: right;
+		}
+		main .main-left .mlt{
+			width: 100%;
+			height: 300px;
+			position: relative;
+		}
+		main .main-left .mlb{
+			width: 100%;
+			height: 400px;
+		}
+		.touxiang{
+			width: 120px;
+			height: 120px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -60px;
+			margin-top: -60px;
+		}
+		.touxiang img{
+			width: 120px;
+			height: 120px;
+		}
+		.tubiao{
+			width: 200px;
+			height: 40px;
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			margin-left: -100px;
+		}
+		.tubiao img{
+			width: 40px;
+			height: 40px;
+			padding-left: 15px;
+		}
+		.mlb h3{
+			text-align: center;
+			height: 80px;
+			line-height: 80px;
+		}
+		.mlb ul li{
+			text-align: center;
+			list-style: none;
+			height: 50px;
+		}
+		.main-right h1{
+			text-align: center;
+		}
+		article div{
+			height: 300px;
+			border: 1px solid rgba(0,0,0,.5);
+			margin: 20px 20px;
+			background-color: rgba(255,255,255,.2);
+			}
+			.fixed{
+				width: 50px;
+				height: 50px;
+				background-color: rgba(0,0,0,.4);
+				position: fixed;
+				right: 0;
+				bottom: 30px;
+				background: url(tubiao.png);
+				background-position: -175px -170px
+			}
+			.fixed:hover{
+				background: url(tubiao.png) -175px -114px;
+			}
+			.fixedimg{
+				width: 200px;
+				height: 200px;
+				position: fixed;
+				top: 40%;
+				left: 30%;
+			}
+			.fixedimg img{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				display: none;
+			}
+	</style>
+</head>
+<body>
+	<!--头部内容-->
+	<div class="top"></div>
+	<header>
+		<div class="logo"><img src="logo.png" alt="王一川"></div>
+		<nav>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="index2.html">简历</a></li>
+				<li><a href="index3.html">作品</a></li>
+				<li><a href="#">联系方式</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--主体-->
+	<main>
+		<div class="main-left">
+			<div class="mlt">
+				<div class="touxiang"><img src="touxiang.jpg" alt="王一川"></div>
+				<div class="tubiao">
+					<a href="javascript:;"><img src="QQ.png" class="img1"></a>
+					<a href="javascript:;"><img src="weixin.png" class="img2"></a>
+					<a href="javascript:;"><img src="zhihu.png" class="img3"></a>
+				</div>
+			</div>
+			<div class="mlb">
+				<h3>技术栈</h3>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>
+					<li>jQuety</li>
+					<li>jQuery mobile</li>
+					<li>PhotoShop</li>
+					<li>. . .</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-right">
+			<h1>Welcome to my web page.</h1>
+			<article>
+				<div>假装这里有一些文章 假装这里有一些文章 假装这里有一些文章</div>
+				<div>假装这里有一些文章 假装这里有一些文章 假装这里有一些文章</div>
+				<div>假装这里有一些文章 假装这里有一些文章 假装这里有一些文章</div>
+				<div>假装这里有一些文章 假装这里有一些文章 假装这里有一些文章</div>
+				<div>假装这里有一些文章 假装这里有一些文章 假装这里有一些文章</div>
+			</article>
+		</div>
+	</main>
+	<!--底部-->
+	<footer>
+		<div class="fixed"></div>
+		<div class="fixedimg">
+			<div class="qq2">
+				<img src="qq2.jpg">
+			</div>
+			<div class="weixin2">
+				<img src="weixin2.png">
+			</div>
+			<div class="zhihu2">
+				<img src="zhihu2.jpg">
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(".fixed").click(function(){
+			$(document).scrollTop(0)
+		})
+		$(".tubiao .img1").click(function(){
+			$(".qq2 img").fadeToggle()
+		});
+		$(".tubiao .img2").click(function(){
+			$(".weixin2 img").fadeToggle()
+		});
+		$(".tubiao .img3").click(function(){
+			$(".zhihu2 img").fadeToggle()
+		})
+
+	</script>
+</body>
+</html>

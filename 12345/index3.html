@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon5.ico">
+	<title>作品</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			font-family: "微软雅黑"
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			background-image: url(303.jpg);
+			background-size: cover;
+			z-index: -1
+		}
+		.top{
+			width: 100%;
+			height: 30px;
+			background-color: #666;
+		}
+		header{
+			width: 100%;
+			height: 80px;
+			margin-bottom: 50px;
+		}
+		header .logo{
+			float: left;
+			padding-left: 50px;
+			width: 200px;
+			height: 80px;
+		}
+		header ul{
+			list-style: none;
+			float: right;
+			padding-right: 50px;
+		}
+		header ul li{
+			float: left;
+			width: 150px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+		}
+		header ul li a{
+			font-size: 24px;
+			color: #000;
+		}
+		header ul a:hover{
+			color: orange
+		}
+		.main{
+			width: 800px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.main > div{
+			width: 800px;
+			margin-bottom: 100px;
+			border-bottom: 1px solid #09f;
+		}
+		.main img{
+			width: 800px;
+			height: 400px;
+		}
+		.main p{
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			font-size: 30px;
+
+		}
+		.fixed{
+				width: 50px;
+				height: 50px;
+				background-color: rgba(0,0,0,.4);
+				position: fixed;
+				right: 0;
+				bottom: 30px;
+				background: url(tubiao.png);
+				background-position: -175px -170px
+			}
+			.fixed:hover{
+				background: url(tubiao.png) -175px -114px;
+			}
+	</style>
+</head>
+<body>
+	<!--头部内容-->
+	<div class="top"></div>
+	<header>
+		<div class="logo"><img src="logo.png" alt="王一川"></div>
+		<nav>
+			<ul>
+				<li><a href="index1.html">首页</a></li>
+				<li><a href="index2.html">简历</a></li>
+				<li><a href="#">作品</a></li>
+				<li><a href="#">联系方式</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="main">
+		<div class="one">
+			<a href="#"><img src="xczyjsxy.png"></a>
+			<p>仿的学校官网</p>
+		</div>
+		<div class="two">
+			<a href="tanchishe.html"><img src="tanchishe.png"></a>
+			<p>贪吃蛇小游戏</p>
+		</div>
+		<div class="two">
+			
+			<p>未完待续。。</p>
+		</div>
+	</div>
+	<!--底部-->
+	<footer>
+		<div class="fixed"></div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(".fixed").click(function(){
+			$(document).scrollTop(0)
+		})
+	</script>
+</body>
+</html>
