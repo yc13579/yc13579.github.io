@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>门店</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="keywords" content="王康,王康仿写星巴克,广德王康的星巴克" />
+<meta name="description" content="javascript移动端轮播图滑动插件" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/photoSlider-1.21.js"></script>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<style type="text/css">
+	@media screen and (min-width: 800px){
+		nav{
+			display: none;
+		}
+		.one{
+			width: 30%;
+			float: left;
+			position: fixed;
+		}
+		.two{
+			float: right;
+			width: 70%;
+		}
+		.sign{
+			margin-top: 150px;
+			padding: 50px
+		}
+	}
+	@media screen and (max-width: 799px){
+		.dada .zhuye0{
+			display: none;
+		}
+		.dada a{
+			float: left;
+			width: 20%;
+			text-align: center;
+			color: #000
+		}
+		.dada a:hover{
+			text-decoration: none;
+			color: #00a862
+		}
+		.dada span{
+			display: inline-block;
+			width: 28px;
+			margin: 0 auto
+		}
+		.dada img{
+			margin: 0 auto;
+			width: 28px
+		}
+		body{
+			padding-bottom: 100px
+		}
+		.row{
+			margin-right: 0
+		}
+		.toplayer{
+			display: none;
+		}
+		header{
+			display: none;
+		}
+		.sign a{
+			display: none;
+		}
+		.row1 img{
+			margin-top: 40px;
+		}
+		.row2{
+			text-align: center;
+			margin-top: 40px;
+		}
+		.row2 img{
+			width: 100%;
+			margin:40px 0;
+		}
+		.jingxuan{
+			text-align: center;
+			background: #f7f7f7;
+			padding: 40px 20px;
+		}
+		.jingxuanp{
+			font-size: 20px;
+			color: #6d6d6d;
+		}
+		.jingxuan .col-md-3{
+			float: left;
+			width: 50%;
+		}
+		.jingxuan h6{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.red,.blue,.green,.orange{
+			background: #fff;
+			height: 200px;
+			padding-top: 50px;
+			margin-top: 80px;
+			position: relative;
+			border: 1px #e2e2e2 solid;
+		}
+		.red img,.blue img,.green img,.orange img{
+			width: 80px;
+			height: 100px;
+			position: absolute;
+			left: 50%;
+			margin-left: -40px;
+			top: -50px;
+		}
+		.paikejie{
+			text-align: center;
+			overflow: hidden;
+		}
+		.paikejie1{
+			width: 250%;
+		}
+		.paikejie1 li{
+			width: 209px;
+			height: 165px;
+			background-size: 209px 130px;
+			background-repeat: no-repeat;
+			border: 1px solid #e6e6e6;
+			float: left;
+			margin-right: 20px;
+		}
+		.paikejie-li1{
+			background-image: url(images/bj1.jpg);
+		}
+		.paikejie-li2{
+			background-image: url(images/bj2.jpg);
+		}
+		.paikejie-li3{
+			background-image: url(images/bj3.jpg);
+		}
+		.paikejie-li4{
+			background-image: url(images/bj4.jpg);
+		}
+		.paikejie span{
+			display: block;
+			margin-top: 140px;
+			text-align: left;
+			padding-left: 20px;
+		}
+		.zuihou{
+			width: 100%;
+			height: 165px;
+			position: relative;
+		}
+		.prev,.next{
+			width: 30px;
+			height: 60px;
+			background: url(images/pre2.png) no-repeat center center;
+			position: absolute;
+			top: 50%;
+			margin-top: -30px;
+		}
+		.prev:hover,.next:hover{
+			background-color:rgba(0,0,0,.5);
+		}
+		.prev{
+			left: 0px;
+		}
+		.next{
+			right: 0px;
+			z-index: 111;
+			transform: rotate(180deg);
+		}
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container dada">
+			<a href="index.html">
+				<span>
+					<img class="zhuye" src="images/zhuye.svg">
+					<img class="zhuye0" src="images/zhuye0.svg">
+				</span>
+				<div>主页</div>
+			</a>
+			<a href="mendian.html">
+				<span>
+					<img class="zhuye" src="images/mendian.svg">
+					<img class="zhuye0" src="images/mendian0.svg">
+				</span>
+				<div>门店</div>
+			</a>
+			<a href="wode.html">
+				<span>
+					<img class="zhuye" src="images/wode.svg">
+					<img class="zhuye0" src="images/wode0.svg">
+				</span>
+				<div>我的账户</div>
+			</a>
+			<a href="caidan.html">
+				<span>
+					<img class="zhuye" src="images/caidan.svg">
+					<img class="zhuye0" src="images/caidan0.svg">
+				</span>
+				<div>菜单</div>
+			</a>
+			<a href="#" class="toggle" data-toggle="collapse" data-target="#mynavbar">
+				<span>
+					<img class="zhuye" src="images/gengduo.svg">
+					<img class="zhuye0" src="images/gengduo0.svg">
+				</span>
+				<div>更多</div>
+			</a>
+			<div id="mynavbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">请联系我</a></li>
+					<li><a href="#">QQ</a></li>
+					<li><a href="#">微信</a></li>
+					<li><a href="#">微博</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<h1>努力努力再努力</h1>
+</body>
+</html>
